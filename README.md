@@ -1,37 +1,63 @@
 # MDP REPRESENTATION
 
 ## AIM:
-Write your aim here
+To represent a Markov Decision Process(MDP) problem in the following ways.
+
+1.Text representation
+
+2.Graphical representation
+
+3.Python - Dictonary representation
 
 ## PROBLEM STATEMENT:
-
+```
+DEVELOPED BY : Marella Dharanesh
+REF NO : 212222240062
+```
 ### Problem Description
-Write your answer here
+An agent needs to pick product B from a supermarket where there are three products A , B and C
 
 ### State Space
-Write your answer here
+{Product A , Product B , Product C}
 
 ### Sample State
-Write your answer here
+Product A
 
 ### Action Space
-Write your answer here
+[Left , Right , Pick}
 
 ### Sample Action
-Write your answer here
+Left
 
 ### Reward Function
-Write your answer here
++1 - when an agent move to the right side and pick product B
+0 - Otherwise
 
 ### Graphical Representation
-Write your answer here
+
+![graphical diagram ](https://github.com/user-attachments/assets/ef153350-21f8-4342-ac6d-a084ae72479c)
+
 
 ## PYTHON REPRESENTATION:
-Write your code here
-
+```python3
+P = {
+    0:{
+        0: [(1.0,0,0.0,True)],
+        1: [(1.0,0,0.0,True)]
+    },
+    1:{
+        0: [(1.0,0,0.0,True)],
+        1: [(1.0,2,1.0,True)]
+    },
+    2:{
+        0: [(1.0,2,0.0,True)],
+        1: [(1.0,2,0.0,True)]
+    }
+}
+```
 ## OUTPUT:
-Write your Python output here
+
+![pic RL DHARANESH](https://github.com/user-attachments/assets/9ae15c88-790a-4e14-b348-ab9119b3347b)
 
 ## RESULT:
-Write your output here
-
+Thus, the agent learns to pick product B from products A, B, and C by repeatedly interacting with the environment, receiving feedback in the form of rewards
