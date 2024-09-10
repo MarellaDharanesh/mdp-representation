@@ -33,6 +33,28 @@ Left
 +1 - when an agent move to the right side and pick product B
 0 - Otherwise
 
+### Stochastic Transition Probability
+In a stochastic MDP, the transition probabilities determine the likelihood of moving from one state to another after taking a certain action.
+
+Transition Probability:
+
+From Product A (State 0):
+
+Left (Action 0): 100% chance to remain in Product A.
+
+Right (Action 1): 100% chance to remain in Product A.
+
+From Product B (State 1):
+
+Left (Action 0): 100% chance to move to Product A.
+
+Right (Action 1): 70% chance to move to Product C with a reward of +1, 30% chance to remain in Product B with no reward.
+
+From Product C (State 2):
+
+Left (Action 0): 100% chance to remain in Product C.
+
+Right (Action 1): 100% chance to remain in Product C.
 ### Graphical Representation
 
 ![graphical diagram ](https://github.com/user-attachments/assets/ef153350-21f8-4342-ac6d-a084ae72479c)
